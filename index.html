@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Agbalumo&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Dongle&family=Dosis&family=Jost:wght@200&family=Kanit:ital,wght@1,500&family=Lato:wght@300&family=M+PLUS+Rounded+1c:wght@700&family=Merriweather+Sans:wght@600&family=Oswald:wght@400;500&family=Outfit:wght@400;600&family=Prompt:wght@300&family=Quicksand&family=Raleway:ital,wght@1,400;1,600&family=Sedgwick+Ave+Display&family=Shantell+Sans:wght@300&family=Signika+Negative:wght@700&family=Skranji&family=Space+Grotesk:wght@400;600;700&family=Teko:wght@500&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Acme&family=Agbalumo&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Dongle&family=Dosis&family=Jost:wght@200&family=Kanit:ital,wght@1,500&family=Lato:wght@300&family=M+PLUS+Rounded+1c:wght@700&family=Merriweather+Sans:wght@600&family=Oswald:wght@400;500&family=Outfit:wght@400;600&family=Prompt:wght@300&family=Quicksand&family=Raleway:ital,wght@1,400;1,600&family=Sedgwick+Ave+Display&family=Shantell+Sans:wght@300&family=Signika+Negative:wght@700&family=Skranji&family=Space+Grotesk:wght@400;600;700&family=Teko:wght@500&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>Formulario de contato </title>
+</head>
+<body>
+
+<style>
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('img/paisagem.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Abel';
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 50px 40px 20px 20px;
+    padding: 50px;
+    background-color: rgba(206, 206, 206, 0.5); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+    h1{
+        text-align: center;
+        font-family: 'dancing script';
+        font-size: 40px;
+    }
+    .from-group{
+        margin-bottom: 20px;
+    }
+    label{
+        display: block;
+        font-weight: bold;
+    }
+    input[type = "text"],
+    input[type = "email"],
+    input[type = "tel"] {
+        width : 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 3px solid rgb(225, 29, 140);
+        border-radius: 5px;
+        outline: none;
+    }
+
+    input[type="text"]:hover,
+    input[type="email"]:hover,
+    input[type="tel"]:hover {
+    border: 3px solid purple;
+    outline: none;
+}
+    button{
+        background-color: rgb(155, 44, 144);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 295px;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    button:hover {
+    box-shadow: 0 0 20px rgba(119, 11, 133, 0.9); 
+    border: 2px solid rgba(119, 11, 133, 0.9); 
+    transition: box-shadow 0.3s, border 0.3s; 
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Contato</h1>
+        <form action = "salva.php" method="POST">
+            <div class="from-group">
+                <label for="nome"> Nome Completo:</label>
+                <input type="text" id = "nome" nome="nome" required>
+            </div>
+            <div class="from-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" nome = "email" required>
+            </div>
+            <div class="from-group">
+                <label form="telefone">Telefone:</label>
+                <input type="tel" id = "telefone" nome = "telefone">
+            </div>
+            <button type="submit">Enviar</button>
+            </form>
+    </div>
+</body>
+</html>
+
+
